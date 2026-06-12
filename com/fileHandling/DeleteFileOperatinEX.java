@@ -1,0 +1,25 @@
+package com.fileHandling;
+import java.io.*;
+
+
+public class DeleteFileOperatinEX {
+
+	public static void main(String[] args) {
+
+		
+	        String path = "D:\\IOPrograms\\File1.txt";
+
+	        File file = new File(path);
+
+	        if (file.exists()) {
+	            if (file.delete()) {
+	                System.out.println("File deleted successfully.");
+	            } else {
+	                System.out.println("Failed to delete the file.");
+	            }
+	        } else {
+	            System.out.println("File does not exist.");
+	        }
+	}
+
+}
